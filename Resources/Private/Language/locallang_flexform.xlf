@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-27T07:36:46Z" product-name="lp_iframe">
+		<header/>
+		<body>
+			<trans-unit id="flexform.pi1.src">
+				<source>Src: Specifies the address of the document to embed in the iFrame (Should start with "http://")</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.width">
+				<source>Width: Specifies the width in pixels</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.height">
+				<source>Height: Specifies the height in pixels</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.name">
+				<source>Name: Specifies the name</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.sandbox">
+				<source>Sandbox: Enables a set of extra restrictions for the content</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.sandbox.I.0">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.sandbox.I.1">
+				<source>allow-forms</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.sandbox.I.2">
+				<source>allow-same-origin</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.sandbox.I.3">
+				<source>allow-scripts</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.sandbox.I.4">
+				<source>allow-top-navigation</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.seamless">
+				<source>Seamless: Specifies that the iFrame should look like it is a part of the containing document</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.seamless.I.0">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.seamless.I.1">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.seamless.I.2">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.srcdoc">
+				<source>Srcdoc: Specifies the HTML content of the page to show in the iFrame</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.scrolling">
+				<source>Scrolling: Specifies whether or not to display scrollbars (Not supported in HTML5)</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.scrolling.I.0">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.scrolling.I.1">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.scrolling.I.2">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.scrolling.I.3">
+				<source>Auto</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.frameborder">
+				<source>Frameborder: Specifies whether or not to display a border around an iframe (Not supported in HTML5)</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.frameborder.I.0">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.frameborder.I.1">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.frameborder.I.2">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.insertData">
+				<source>Insert Data: Use getData in this plugin options (fields above). Of example: "Before {page:uid} After" gets to "Before 123 After"</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

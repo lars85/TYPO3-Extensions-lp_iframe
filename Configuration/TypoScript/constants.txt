@@ -1,0 +1,17 @@
+plugin.tx_lpiframe {
+	settings {
+		attributes {
+			src =
+			width =
+			height =
+			name =
+			sandbox =
+			seamless =
+			srcdoc =
+
+			# Deprecated attributes
+			scrolling =
+			frameborder =
+		}
+	}
+}

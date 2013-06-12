@@ -1,0 +1,152 @@
+plugin.tx_lpiframe {
+	renderObj = COA
+	renderObj {
+		wrap = <div class="tx-lpiframe-pi1">|</div>
+		10 = COA
+		10 {
+			wrap = <iframe|>
+
+			# Src
+			10 = TEXT
+			10 {
+				noTrimWrap = | src="|"|
+				value = {$plugin.tx_lpiframe.settings.attributes.src}
+				override.field = src
+				required = 1
+			}
+
+			# Width
+			20 = TEXT
+			20 {
+				noTrimWrap = | width="|"|
+				value = {$plugin.tx_lpiframe.settings.attributes.width}
+				override.field = width
+				intval = 1
+				required = 1
+			}
+
+			# Height
+			30 = TEXT
+			30 {
+				noTrimWrap = | height="|"|
+				value = {$plugin.tx_lpiframe.settings.attributes.height}
+				override.field = height
+				intval = 1
+				required = 1
+			}
+
+			# Name
+			40 = TEXT
+			40 {
+				noTrimWrap = | name="|"|
+				value = {$plugin.tx_lpiframe.settings.attributes.name}
+				override.field = name
+				required = 1
+			}
+
+			# Sandbox
+			50 = CASE
+			50 {
+				stdWrap.noTrimWrap = | sandbox="|"|
+				stdWrap.required = 1
+
+				key.field = sandbox
+
+				0 = TEXT
+				0.value = {$plugin.tx_lpiframe.settings.attributes.sandbox}
+
+				1 = TEXT
+				1.value = allow-forms
+
+				2 = TEXT
+				2.value = allow-same-origin
+
+				3 = TEXT
+				3.value = allow-scripts
+
+				4 = TEXT
+				4.value = allow-top-navigation
+			}
+
+			# Seamless
+			60 = CASE
+			60 {
+				key.field = seamless
+
+				1 = TEXT
+				1.value = seamless
+				1.noTrimWrap = | seamless="|"|
+
+				0 < .1
+				0.if.isTrue.value = {$plugin.tx_lpiframe.settings.attributes.seamless}
+			}
+
+			# Srcdoc
+			70 = TEXT
+			70 {
+				noTrimWrap = | srcdoc="|"|
+				value = {$plugin.tx_lpiframe.settings.attributes.srcdoc}
+				override.field = srcdoc
+				required = 1
+			}
+
+			###
+			# Deprecated attributes
+
+			# Scrolling
+			80 = CASE
+			80 {
+				stdWrap.noTrimWrap = | scrolling="|"|
+				stdWrap.required = 1
+
+				key.field = scrolling
+
+				0 = TEXT
+				0.value = {$plugin.tx_lpiframe.settings.attributes.scrolling}
+
+				1 = TEXT
+				1.value = yes
+
+				2 = TEXT
+				2.value = no
+
+				3 = TEXT
+				3.value = auto
+			}
+
+			# Frameborder
+			90 = COA
+			90 {
+				stdWrap.noTrimWrap = | frameborder="|"|
+
+				10 = CASE
+				10 {
+					key.field = frameborder
+
+					0 = TEXT
+					0.value = {$plugin.tx_lpiframe.settings.attributes.frameborder}
+
+					1 = TEXT
+					1.value = 1
+
+					2 = TEXT
+					2.value = 0
+				}
+
+				if.value = 0,1,2
+				if.isInList.cObject < .10
+			}
+		}
+
+		20 = TEXT
+		20.data = LLL:EXT:lp_iframe/Resources/Private/Language/locallang.xlf:not-supported
+		20.wrap = <p class="not-supported">|</p>
+
+		30 = TEXT
+		30.value = </iframe>
+
+		# Debug
+		#99 = TEXT
+		#99.data = debug:data
+	}
+}
