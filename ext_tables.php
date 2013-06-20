@@ -23,7 +23,8 @@ $pluginSignatureList = strtolower($extensionName) . '_' . $pluginName;
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	$_EXTKEY,
 	$pluginName,
-	'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_db.xlf:' . $pluginName . '.label'
+	'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_db.xlf:' . $pluginName . '.label',
+	'EXT:' . $_EXTKEY . '/ext_icon.gif'
 );
 
 $TCA['tt_content']['types']['list']['subtypes_excludelist'][$pluginSignatureList] = 'layout,select_key,pages,recursive';

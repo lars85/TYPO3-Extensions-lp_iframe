@@ -42,7 +42,7 @@
 					</label>
 					<config>
 						<type>input</type>
-						<eval>trim,int</eval>
+						<eval>trim</eval>
 						<size>4</size>
 					</config>
 				</TCEforms>
@@ -56,7 +56,7 @@
 					</label>
 					<config>
 						<type>input</type>
-						<eval>trim,int</eval>
+						<eval>trim</eval>
 						<size>4</size>
 					</config>
 				</TCEforms>
@@ -155,7 +155,6 @@
 				</TCEforms>
 			</settings.attributes.srcdoc>
 
-
 			<!--
 				Deprecated attributes
 			-->
@@ -221,6 +220,42 @@
 					</config>
 				</TCEforms>
 			</settings.attributes.frameborder>
+
+			<!--
+				Additional attributes
+			-->
+
+			<settings.attributes.id>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:lp_iframe/Resources/Private/Language/locallang_flexform.xlf:flexform.pi1.id
+					</label>
+					<config>
+						<type>input</type>
+						<eval>trim</eval>
+						<size>12</size>
+					</config>
+				</TCEforms>
+			</settings.attributes.id>
+
+			<settings.attributes.class>
+				<TCEforms>
+					<exclude>1</exclude>
+					<label>
+						LLL:EXT:lp_iframe/Resources/Private/Language/locallang_flexform.xlf:flexform.pi1.class
+					</label>
+					<config>
+						<type>input</type>
+						<eval>trim</eval>
+						<size>12</size>
+					</config>
+				</TCEforms>
+			</settings.attributes.class>
+
+			<!--
+				Options
+			-->
 
 			<settings.options.insertData>
 				<TCEforms>

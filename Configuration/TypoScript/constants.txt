@@ -12,6 +12,11 @@ plugin.tx_lpiframe {
 			# Deprecated attributes
 			scrolling =
 			frameborder =
+
+			# Additional attributes
+			id =
+			class =
+			additionalClass =
 		}
 	}
 }

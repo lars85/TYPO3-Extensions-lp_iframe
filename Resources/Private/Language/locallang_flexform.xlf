@@ -75,6 +75,12 @@
 			<trans-unit id="flexform.pi1.frameborder.I.2">
 				<source>No</source>
 			</trans-unit>
+			<trans-unit id="flexform.pi1.id">
+				<source>Id: Specifies a unique id for an element</source>
+			</trans-unit>
+			<trans-unit id="flexform.pi1.class">
+				<source>Class: Specifies one or more classnames for an element (refers to a class in a style sheet)</source>
+			</trans-unit>
 			<trans-unit id="flexform.pi1.insertData">
 				<source>Insert Data: Use getData in this plugin options (fields above). Of example: "Before {page:uid} After" gets to "Before 123 After"</source>
 			</trans-unit>

@@ -21,8 +21,14 @@ plugin.tx_lpiframe {
 				noTrimWrap = | width="|"|
 				value = {$plugin.tx_lpiframe.settings.attributes.width}
 				override.field = width
-				intval = 1
 				required = 1
+				replacement {
+					10 {
+						search = #[^0-9]#
+						replace =
+						useRegExp = 1
+					}
+				}
 			}
 
 			# Height
@@ -31,8 +37,14 @@ plugin.tx_lpiframe {
 				noTrimWrap = | height="|"|
 				value = {$plugin.tx_lpiframe.settings.attributes.height}
 				override.field = height
-				intval = 1
 				required = 1
+				replacement {
+					10 {
+						search = #[^0-9]#
+						replace =
+						useRegExp = 1
+					}
+				}
 			}
 
 			# Name
@@ -91,11 +103,52 @@ plugin.tx_lpiframe {
 			}
 
 			###
+			# Additional attributes
+
+			100 = TEXT
+			100 {
+				noTrimWrap = | id="|"|
+				value = {$plugin.tx_lpiframe.settings.attributes.id}
+				override.field = id
+				required = 1
+			}
+
+			110 = COA
+			110 {
+				stdWrap.noTrimWrap = | class="|"|
+				stdWrap.required = 1
+				stdWrap.trim = 1
+
+				10 = TEXT
+				10 {
+					noTrimWrap = || |
+					required = 1
+
+					value = {$plugin.tx_lpiframe.settings.attributes.class}
+					override.field = class
+
+					case = lower
+					replacement {
+						10 {
+							search = #[^A-Z|a-z|0-9| ]#
+							replace = -
+							useRegExp = 1
+						}
+					}
+				}
+				20 < .10
+				20 {
+					value = {$plugin.tx_lpiframe.settings.attributes.additionalClass}
+					override >
+				}
+			}
+
+			###
 			# Deprecated attributes
 
 			# Scrolling
-			80 = CASE
-			80 {
+			200 = CASE
+			200 {
 				stdWrap.noTrimWrap = | scrolling="|"|
 				stdWrap.required = 1
 
@@ -115,8 +168,8 @@ plugin.tx_lpiframe {
 			}
 
 			# Frameborder
-			90 = COA
-			90 {
+			210 = COA
+			210 {
 				stdWrap.noTrimWrap = | frameborder="|"|
 
 				10 = CASE
@@ -146,7 +199,7 @@ plugin.tx_lpiframe {
 		30.value = </iframe>
 
 		# Debug
-		#99 = TEXT
-		#99.data = debug:data
+		#999 = TEXT
+		#999.data = debug:data
 	}
 }
