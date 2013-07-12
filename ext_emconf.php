@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "lp_iframe".
  *
- * Auto generated 20-06-2013 22:49
+ * Auto generated 12-07-2013 19:31
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -12,8 +12,8 @@
 
 $EM_CONF[$_EXTKEY] = array (
 	'title' => 'iFrame for HTML5 Websites',
-	'description' => 'Yet another iFrame extension with HTML5 support. Rendered with TypoScript. https://bitbucket.org/lars85/lp_iframe',
-	'category' => '',
+	'description' => 'Yet another iFrame extension with HTML5 support. Rendered with TypoScript. https://github.com/lars85/TYPO3-Extensions-lp_iframe',
+	'category' => 'plugin',
 	'author' => 'Lars Peipmann',
 	'author_email' => 'Lars@Peipmann.de',
 	'author_company' => '',
@@ -27,7 +27,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.1.0',
+	'version' => '1.1.1',
 	'constraints' => 
 	array (
 		'depends' => 
