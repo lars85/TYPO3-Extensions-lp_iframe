@@ -3,86 +3,106 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-27T07:36:46Z" product-name="lp_iframe">
 		<header/>
 		<body>
-			<trans-unit id="flexform.pi1.src">
-				<source>Src: Specifies the address of the document to embed in the iFrame (Should start with "http://")</source>
+			<trans-unit id="pi1">
+				<source>iFrame</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.width">
-				<source>Width: Specifies the width in pixels</source>
+
+			<trans-unit id="tab.general">
+				<source>General Attributes</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.height">
-				<source>Height: Specifies the height in pixels</source>
+			<trans-unit id="tab.global">
+				<source>Global Attributes</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.name">
-				<source>Name: Specifies the name</source>
+			<trans-unit id="tab.html5">
+				<source>HTML5 Attributes</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.sandbox">
-				<source>Sandbox: Enables a set of extra restrictions for the content</source>
+			<trans-unit id="tab.deprecated">
+				<source>Deprecated Attributes</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.sandbox.I.0">
+
+			<trans-unit id="settings.attributes.src">
+				<source>Src</source>
+			</trans-unit>
+			<trans-unit id="settings.options.insertData">
+				<source>Option: Insert Data</source>
+			</trans-unit>
+			<trans-unit id="settings.attributes.width">
+				<source>Width</source>
+			</trans-unit>
+			<trans-unit id="settings.attributes.height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="settings.attributes.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="settings.attributes.sandbox">
+				<source>Sandbox</source>
+			</trans-unit>
+			<trans-unit id="settings.attributes.sandbox.I.0">
 				<source>Default</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.sandbox.I.1">
+			<trans-unit id="settings.attributes.sandbox.I.1">
 				<source>allow-forms</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.sandbox.I.2">
+			<trans-unit id="settings.attributes.sandbox.I.2">
 				<source>allow-same-origin</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.sandbox.I.3">
+			<trans-unit id="settings.attributes.sandbox.I.3">
 				<source>allow-scripts</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.sandbox.I.4">
+			<trans-unit id="settings.attributes.sandbox.I.4">
 				<source>allow-top-navigation</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.seamless">
-				<source>Seamless: Specifies that the iFrame should look like it is a part of the containing document</source>
+			<trans-unit id="settings.attributes.seamless">
+				<source>Seamless</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.seamless.I.0">
+			<trans-unit id="settings.attributes.seamless.I.0">
 				<source>Default</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.seamless.I.1">
+			<trans-unit id="settings.attributes.seamless.I.1">
 				<source>Yes</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.seamless.I.2">
+			<trans-unit id="settings.attributes.seamless.I.2">
 				<source>No</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.srcdoc">
-				<source>Srcdoc: Specifies the HTML content of the page to show in the iFrame</source>
+			<trans-unit id="settings.attributes.srcdoc">
+				<source>Srcdoc</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.scrolling">
-				<source>Scrolling: Specifies whether or not to display scrollbars (Not supported in HTML5)</source>
+			<trans-unit id="settings.attributes.scrolling">
+				<source>Scrolling</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.scrolling.I.0">
+			<trans-unit id="settings.attributes.scrolling.I.0">
 				<source>Default</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.scrolling.I.1">
+			<trans-unit id="settings.attributes.scrolling.I.1">
 				<source>Yes</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.scrolling.I.2">
+			<trans-unit id="settings.attributes.scrolling.I.2">
 				<source>No</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.scrolling.I.3">
+			<trans-unit id="settings.attributes.scrolling.I.3">
 				<source>Auto</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.frameborder">
-				<source>Frameborder: Specifies whether or not to display a border around an iframe (Not supported in HTML5)</source>
+			<trans-unit id="settings.attributes.frameborder">
+				<source>Frameborder</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.frameborder.I.0">
+			<trans-unit id="settings.attributes.frameborder.I.0">
 				<source>Default</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.frameborder.I.1">
+			<trans-unit id="settings.attributes.frameborder.I.1">
 				<source>Yes</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.frameborder.I.2">
+			<trans-unit id="settings.attributes.frameborder.I.2">
 				<source>No</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.id">
-				<source>Id: Specifies a unique id for an element</source>
+			<trans-unit id="settings.attributes.id">
+				<source>Id</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.class">
-				<source>Class: Specifies one or more classnames for an element (refers to a class in a style sheet)</source>
+			<trans-unit id="settings.attributes.class">
+				<source>Class</source>
 			</trans-unit>
-			<trans-unit id="flexform.pi1.insertData">
-				<source>Insert Data: Use getData in this plugin options (fields above). Of example: "Before {page:uid} After" gets to "Before 123 After"</source>
+			<trans-unit id="settings.attributes.style">
+				<source>Style</source>
 			</trans-unit>
 		</body>
 	</file>

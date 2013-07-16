@@ -143,6 +143,14 @@ plugin.tx_lpiframe {
 				}
 			}
 
+			120 = TEXT
+			120 {
+				noTrimWrap = | style="|"|
+				value = {$plugin.tx_lpiframe.settings.attributes.style}
+				override.field = style
+				required = 1
+			}
+
 			###
 			# Deprecated attributes
 
