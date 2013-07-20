@@ -41,6 +41,6 @@ lp_iframe: iFrame for HTML5 Websites
 Bug-Tracker
 ===========
 
-Please use the `Bug Tracker`_ to report errors, new futures or merge requests.
+Please use the `Bug Tracker`_ to report errors, new features or merge requests.
 
 .. _Bug Tracker: https://github.com/lars85/TYPO3-Extensions-lp_iframe/issues
