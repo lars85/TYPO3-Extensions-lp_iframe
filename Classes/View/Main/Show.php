@@ -1,5 +1,7 @@
 <?php
 
+Namespace LarsPeipmann\LpIframe\View\Main;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -31,9 +33,7 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-//Namespace LarsPeipmann\LpIframe\View\Main;
-//class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
-class Tx_LpIframe_View_Main_Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
+class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
 	/**
 	 * Renders the view
 	 *

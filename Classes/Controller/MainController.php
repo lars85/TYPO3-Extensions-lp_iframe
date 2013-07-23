@@ -1,4 +1,4 @@
-d<?php
+<?php
 
 namespace LarsPeipmann\LpIframe\Controller;
 
@@ -34,12 +34,32 @@ namespace LarsPeipmann\LpIframe\Controller;
  */
 
 class MainController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+
 	/**
-	 * @return string
+	 * Initializes the controller before invoking an action method.
+	 *
+	 * @return void
+	 */
+	protected function initializeAction() {
+		// Replace old pattern with new one (new pattern comes with Extbase 6.2)
+		if (!preg_match('/\\\/', $this->viewObjectNamePattern)) {
+			$this->viewObjectNamePattern = 'LarsPeipmann\@extension\View\@controller\@action@format';
+		}
+	}
+
+	/**
+	 * Show action
+	 *
+	 * Assigns FlexForm data to the view.
+	 *
+	 * @return void
 	 */
 	public function showAction() {
-		$this->view
-			->assign('attributes', $this->settings['attributes'])
-			->assign('options', $this->settings['options']);
+		$this->view->assignMultiple(
+			array(
+				'attributes' => $this->settings['attributes'],
+				'options' => $this->settings['options'],
+			)
+		);
 	}
 }
