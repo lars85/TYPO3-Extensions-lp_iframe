@@ -22,13 +22,7 @@ plugin.tx_lpiframe {
 				value = {$plugin.tx_lpiframe.settings.attributes.width}
 				override.field = width
 				required = 1
-				replacement {
-					10 {
-						search = #[^0-9]#
-						replace =
-						useRegExp = 1
-					}
-				}
+				prioriCalc = intval
 			}
 
 			# Height
@@ -38,13 +32,7 @@ plugin.tx_lpiframe {
 				value = {$plugin.tx_lpiframe.settings.attributes.height}
 				override.field = height
 				required = 1
-				replacement {
-					10 {
-						search = #[^0-9]#
-						replace =
-						useRegExp = 1
-					}
-				}
+				prioriCalc = intval
 			}
 
 			# Name

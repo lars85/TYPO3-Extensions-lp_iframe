@@ -12,11 +12,13 @@ Screenshots
 ===========
 
 .. figure:: Images/tabGeneral.png
-	:width: 605px
+	:width: 602px
 	:alt: Tab: General Attributes
 
 	Attributes "Src", "Width" and "Height".
-	"Option: Insert Data" enables "stdWrap.insertData" for every flexform field (See the example in "Src")
+	"Option: Insert Data" enables "stdWrap.insertData" for every flexform field (See the example in "Src").
+	Calculate in "Width" and "Height" (with "stdWrap.prioriCalc = intval").
+	Use values of prior fields (See the example in "Height").
 
 
 .. figure:: Images/tabHtml5.png

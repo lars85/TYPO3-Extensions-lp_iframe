@@ -44,7 +44,7 @@
 							<config>
 								<type>input</type>
 								<eval>trim</eval>
-								<size>4</size>
+								<size>10</size>
 							</config>
 						</TCEforms>
 					</settings.attributes.width>
@@ -58,7 +58,7 @@
 							<config>
 								<type>input</type>
 								<eval>trim</eval>
-								<size>4</size>
+								<size>10</size>
 							</config>
 						</TCEforms>
 					</settings.attributes.height>
