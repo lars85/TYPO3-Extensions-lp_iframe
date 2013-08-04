@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "lp_iframe".
  *
- * Auto generated 23-07-2013 23:18
+ * Auto generated 04-08-2013 13:23
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -27,14 +27,18 @@ $EM_CONF[$_EXTKEY] = array (
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '1.2.1',
-	'constraints' => array(
-		'depends' => array(
+	'version' => '1.2.2',
+	'constraints' => 
+	array (
+		'depends' => 
+		array (
 			'typo3' => '6.0.0-6.1.99',
 		),
-		'conflicts' => array(
+		'conflicts' => 
+		array (
 		),
-		'suggests' => array(
+		'suggests' => 
+		array (
 		),
 	),
 );
