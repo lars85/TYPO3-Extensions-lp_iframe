@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>lp_iframe_f4x: Flexform</description>
+		<type>flexform</type>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1">iFrame</label>
+
+			<label index="tab.general">General Attributes</label>
+			<label index="tab.global">Global Attributes</label>
+			<label index="tab.html5">HTML5 Attributes</label>
+			<label index="tab.deprecated">Deprecated Attributes</label>
+
+			<label index="settings.attributes.src">Src</label>
+			<label index="settings.options.insertData">Option: Insert Data</label>
+			<label index="settings.attributes.width">Width</label>
+			<label index="settings.attributes.height">Height</label>
+			<label index="settings.attributes.name">Name</label>
+			<label index="settings.attributes.sandbox">Sandbox</label>
+			<label index="settings.attributes.sandbox.I.0">Default</label>
+			<label index="settings.attributes.sandbox.I.1">allow-forms</label>
+			<label index="settings.attributes.sandbox.I.2">allow-same-origin</label>
+			<label index="settings.attributes.sandbox.I.3">allow-scripts</label>
+			<label index="settings.attributes.sandbox.I.4">allow-top-navigation</label>
+			<label index="settings.attributes.seamless">Seamless</label>
+			<label index="settings.attributes.seamless.I.0">Default</label>
+			<label index="settings.attributes.seamless.I.1">Yes</label>
+			<label index="settings.attributes.seamless.I.2">No</label>
+			<label index="settings.attributes.srcdoc">Srcdoc</label>
+			<label index="settings.attributes.scrolling">Scrolling</label>
+			<label index="settings.attributes.scrolling.I.0">Default</label>
+			<label index="settings.attributes.scrolling.I.1">Yes</label>
+			<label index="settings.attributes.scrolling.I.2">No</label>
+			<label index="settings.attributes.scrolling.I.3">Auto</label>
+			<label index="settings.attributes.frameborder">Frameborder</label>
+			<label index="settings.attributes.frameborder.I.0">Default</label>
+			<label index="settings.attributes.frameborder.I.1">Yes</label>
+			<label index="settings.attributes.frameborder.I.2">No</label>
+			<label index="settings.attributes.id">Id</label>
+			<label index="settings.attributes.class">Class</label>
+			<label index="settings.attributes.style">Style</label>
+		</languageKey>
+	</data>
+</T3locallang>

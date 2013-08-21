@@ -1,7 +1,5 @@
 <?php
 
-Namespace LarsPeipmann\LpIframe\View\Main;
-
 /***************************************************************
  *  Copyright notice
  *
@@ -29,11 +27,11 @@ Namespace LarsPeipmann\LpIframe\View\Main;
 /**
  * The main controller for the page backend module.
  *
- * @package LpIframe
+ * @package LpIframeF4x
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
+class Tx_LpIframeF4x_View_Main_Show extends Tx_Extbase_MVC_View_AbstractView {
 	/**
 	 * Renders the view
 	 *
@@ -42,7 +40,7 @@ class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
 	public function render() {
 		$attributes = $this->variables['attributes'];
 
-		/** @var $contentObject \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer */
+		/** @var $contentObject tslib_cObj */
 		$contentObject = &$GLOBALS['TSFE']->cObj;
 
 		if (!empty($this->variables['options']['insertData'])) {
@@ -58,14 +56,14 @@ class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
 
 		$contentObject->start($attributes);
 
-		/** @var $typoScriptObject \TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController */
+		/** @var $typoScriptObject tslib_fe */
 		$typoScriptObject = &$GLOBALS['TSFE'];
-		$extensionTypoScript = $typoScriptObject->tmpl->setup['plugin.']['tx_lpiframe.'];
+		$extensionTypoScript = $typoScriptObject->tmpl->setup['plugin.']['tx_lpiframef4x.'];
 
 		if (!empty($extensionTypoScript['renderObj']) && !empty($extensionTypoScript['renderObj.'])) {
 			$content = $contentObject->cObjGetSingle($extensionTypoScript['renderObj'], $extensionTypoScript['renderObj.']);
 		} else {
-			$content = 'Please inlcude TypoScript static files (setup.txt and constants.txt) of lp_iframe extension.';
+			$content = 'Please inlcude TypoScript static files (setup.txt and constants.txt) of lp_iframe_f4x extension.';
 		}
 
 		return $content;

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>lp_iframe_f4x: CSH Flexform</description>
+		<type>csh flexform</type>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="settings.attributes.src.description">Specifies the address of the document to embed in the iFrame (Should start with "http://")</label>
+			<label index="settings.options.insertData.description">Use getData in this plugin options (fields above). Of example: "Before {page:uid} After" gets to "Before 123 After"</label>
+			<label index="settings.attributes.width.description">Specifies the width in pixels</label>
+			<label index="settings.attributes.height.description">Specifies the height in pixels</label>
+			<label index="settings.attributes.name.description">Specifies the name</label>
+			<label index="settings.attributes.sandbox.description">Enables a set of extra restrictions for the content</label>
+			<label index="settings.attributes.seamless.description">Specifies that the iFrame should look like it is a part of the containing document</label>
+			<label index="settings.attributes.srcdoc.description">Specifies the HTML content of the page to show in the iFrame</label>
+			<label index="settings.attributes.scrolling.description">Specifies whether or not to display scrollbars (Not supported in HTML5)</label>
+			<label index="settings.attributes.frameborder.description">Specifies whether or not to display a border around an iframe (Not supported in HTML5)</label>
+			<label index="settings.attributes.id.description">Specifies a unique id for an element</label>
+			<label index="settings.attributes.class.description">Specifies one or more classnames for the element (refers to a class in a style sheet)</label>
+			<label index="settings.attributes.style.description">Specifies an inline style for the element</label>
+		</languageKey>
+	</data>
+</T3locallang>

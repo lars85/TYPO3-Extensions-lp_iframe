@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>lp_iframe_f4x: Plugin</description>
+		<type>plugin</type>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="not-supported">iFrames are not supported by your browser.</label>
+		</languageKey>
+	</data>
+</T3locallang>

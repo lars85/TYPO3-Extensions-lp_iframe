@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>lp_iframe_f4x: Constants</description>
+		<type>constants</type>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tab.general">General Attributes</label>
+			<label index="tab.global">Global Attributes</label>
+			<label index="tab.html5">HTML5 Attributes</label>
+			<label index="tab.deprecated">Deprecated Attributes</label>
+
+			<label index="settings.attributes.src">Src: Specifies the address of the document to embed in the iFrame (Should start with "http://")</label>
+			<label index="settings.attributes.width">Width: Specifies the width in pixels</label>
+			<label index="settings.attributes.height">Height: Specifies the height in pixels</label>
+			<label index="settings.attributes.name">Name: Specifies the name</label>
+			<label index="settings.attributes.sandbox">Sandbox: "1" = allow-forms, "2" = allow-same-origin, "3" = allow-scripts, "4" = allow-top-navigation. Enables a set of extra restrictions for the content</label>
+			<label index="settings.attributes.seamless">Seamless: "1" = Yes, "2" = No. Specifies that the iFrame should look like it is a part of the containing document</label>
+			<label index="settings.attributes.srcdoc">Srcdoc: Specifies the HTML content of the page to show in the iFrame</label>
+			<label index="settings.attributes.scrolling">Scrolling: "1" = Yes, "2" = No, "3" = Auto. Specifies whether or not to display scrollbars (Not supported in HTML5)</label>
+			<label index="settings.attributes.frameborder">Frameborder: "1" = Yes, "2" = No. Specifies whether or not to display a border around an iframe (Not supported in HTML5)</label>
+			<label index="settings.attributes.id">Id: Specifies a unique id for an element</label>
+			<label index="settings.attributes.class">Class: Specifies one or more classnames for the element (refers to a class in a style sheet)</label>
+			<label index="settings.attributes.additionalClass">Additional Class: Appends classnames to the (flexform) field "class"</label>
+			<label index="settings.attributes.style">Style: Specifies an inline style for the element</label>
+		</languageKey>
+	</data>
+</T3locallang>

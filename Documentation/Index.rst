@@ -6,15 +6,15 @@
 .. include:: Includes.txt
 
 
-====================================
-lp_iframe: iFrame for HTML5 Websites
-====================================
+================================================================
+lp_iframe_f4x: iFrame for HTML5 Websites (for TYPO3 Version 4.x)
+================================================================
 
 :Rendered:
       |today|
 
 :Description:
-      Yet another iFrame extension with HTML5 support. Rendered with TypoScript.
+      Yet another iFrame extension with HTML5 support for TYPO3 Version 4.x. Rendered with TypoScript.
 
 :Keywords:
       forEditors, forAdmins, forBeginners, forIntermediates
@@ -37,6 +37,13 @@ lp_iframe: iFrame for HTML5 Websites
       Screenshots/Index
       TypoScript/Index
 
+
+Version for TYPO3 Version 6.x
+=============================
+
+You can find the exact same extension named `lp_iframe`_ with PHP namespaces for TYPO3 Version 6.x in the TYPO3 Extension Repository (TER).
+
+.. _lp_iframe: http://typo3.org/extensions/repository/view/lp_iframe
 
 Bug-Tracker
 ===========

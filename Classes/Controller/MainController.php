@@ -1,7 +1,5 @@
 <?php
 
-namespace LarsPeipmann\LpIframe\Controller;
-
 /***************************************************************
  *  Copyright notice
  *
@@ -27,25 +25,13 @@ namespace LarsPeipmann\LpIframe\Controller;
  ***************************************************************/
 
 /**
- * The main controller for the page backend module.
+ * The main controller for the lp_iframe_f4x extension.
  *
- * @package LpIframe
+ * @package LpIframeF4x
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-class MainController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
-
-	/**
-	 * Initializes the controller before invoking an action method.
-	 *
-	 * @return void
-	 */
-	protected function initializeAction() {
-		// Replace old pattern with new one (new pattern comes with Extbase 6.2)
-		if (!preg_match('/\\\/', $this->viewObjectNamePattern)) {
-			$this->viewObjectNamePattern = 'LarsPeipmann\@extension\View\@controller\@action@format';
-		}
-	}
+class Tx_LpIframeF4x_Controller_MainController extends Tx_Extbase_MVC_Controller_ActionController {
 
 	/**
 	 * Show action
