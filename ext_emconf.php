@@ -40,7 +40,7 @@ $EM_CONF[$_EXTKEY] = array (
     array (
     ),
   ),
-  'comment' => 'Initial upload to TER',
+  'comment' => 'Added docs',
   'user' => 'lars85',
 );
 
