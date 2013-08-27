@@ -14,6 +14,7 @@ $EM_CONF[$_EXTKEY] = array (
   'category' => 'plugin',
   'author' => 'Lars Peipmann',
   'author_email' => 'Lars@Peipmann.de',
+  'dependencies' => 'extbase',
   'author_company' => '',
   'shy' => '',
   'priority' => '',
@@ -40,7 +41,7 @@ $EM_CONF[$_EXTKEY] = array (
     array (
     ),
   ),
-  'comment' => 'Added docs',
+  'comment' => 'Adds dependencies to emconf',
   'user' => 'lars85',
 );
 
