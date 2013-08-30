@@ -50,8 +50,10 @@ class Tx_LpIframeF4x_View_Main_Show extends Tx_Extbase_MVC_View_AbstractView {
 			}
 		}
 
-		foreach ($attributes as $key => $value) {
-			$attributes[$key] = htmlspecialchars($value, ENT_HTML5);
+		if (version_compare(PHP_VERSION, '5.4.0') >= 0) {
+			foreach ($attributes as $key => $value) {
+				$attributes[$key] = htmlspecialchars($value, ENT_HTML5);
+			}
 		}
 
 		$contentObject->start($attributes);
