@@ -52,8 +52,10 @@ class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
 			}
 		}
 
-		foreach ($attributes as $key => $value) {
-			$attributes[$key] = htmlspecialchars($value, ENT_HTML5);
+		if (version_compare(PHP_VERSION, '5.4.0') >= 0) {
+			foreach ($attributes as $key => $value) {
+				$attributes[$key] = htmlspecialchars($value, ENT_HTML5);
+			}
 		}
 
 		$contentObject->start($attributes);
