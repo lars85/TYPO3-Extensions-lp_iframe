@@ -9,7 +9,6 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	array(
 		'Main' => 'show',
 	),
-	// non-cacheable actions
 	array(
 	)
 );

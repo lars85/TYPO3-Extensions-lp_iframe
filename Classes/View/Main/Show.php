@@ -3,7 +3,7 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2013 Lars Peipmann <Lars@Peipmann.de>
+ *  (c) 2014 Lars Peipmann <Lars@Peipmann.de>
  *
  *  All rights reserved
  *
@@ -32,6 +32,20 @@
  */
 
 class Tx_LpIframeF4x_View_Main_Show extends Tx_Extbase_MVC_View_AbstractView {
+
+	/**
+	 * @var Tx_LpIframeF4x_Service_ConfigurationManager
+	 */
+	protected $configurationManager;
+
+	/**
+	 * @param Tx_LpIframeF4x_Service_ConfigurationManager $configurationManager
+	 * @return void
+	 */
+	public function injectConfigurationManager(Tx_LpIframeF4x_Service_ConfigurationManager $configurationManager) {
+		$this->configurationManager = $configurationManager;
+	}
+
 	/**
 	 * Renders the view
 	 *
@@ -41,7 +55,7 @@ class Tx_LpIframeF4x_View_Main_Show extends Tx_Extbase_MVC_View_AbstractView {
 		$attributes = $this->variables['attributes'];
 
 		/** @var $contentObject tslib_cObj */
-		$contentObject = &$GLOBALS['TSFE']->cObj;
+		$contentObject = $this->variables['contentObject'];
 
 		if (!empty($this->variables['options']['insertData'])) {
 			foreach ($attributes as $key => $value) {
@@ -58,10 +72,7 @@ class Tx_LpIframeF4x_View_Main_Show extends Tx_Extbase_MVC_View_AbstractView {
 
 		$contentObject->start($attributes);
 
-		/** @var $typoScriptObject tslib_fe */
-		$typoScriptObject = &$GLOBALS['TSFE'];
-		$extensionTypoScript = $typoScriptObject->tmpl->setup['plugin.']['tx_lpiframef4x.'];
-
+		$extensionTypoScript = $this->configurationManager->getExtensionConfiguration();
 		if (!empty($extensionTypoScript['renderObj']) && !empty($extensionTypoScript['renderObj.'])) {
 			$content = $contentObject->cObjGetSingle($extensionTypoScript['renderObj'], $extensionTypoScript['renderObj.']);
 		} else {

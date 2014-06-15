@@ -25,28 +25,35 @@
  ***************************************************************/
 
 /**
- * The main controller for the lp_iframe_f4x extension.
+ * Configuration Manager
  *
  * @package LpIframeF4x
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-class Tx_LpIframeF4x_Controller_MainController extends Tx_Extbase_MVC_Controller_ActionController {
+class Tx_LpIframeF4x_Service_ConfigurationManager implements t3lib_Singleton {
 
 	/**
-	 * Show action
-	 *
-	 * Assigns FlexForm data to the view.
-	 *
+	 * @var Tx_Extbase_Configuration_ConfigurationManager
+	 * @inject
+	 */
+	protected $configurationManager;
+
+	/**
+	 * @param Tx_Extbase_Configuration_ConfigurationManager $configurationManager
 	 * @return void
 	 */
-	public function showAction() {
-		$this->view->assignMultiple(
-			array(
-				'attributes' => $this->settings['attributes'],
-				'options' => $this->settings['options'],
-				'contentObject' => $this->configurationManager->getContentObject()
-			)
+	public function injectConfigurationManager(Tx_Extbase_Configuration_ConfigurationManager $configurationManager) {
+		$this->configurationManager = $configurationManager;
+	}
+
+	/**
+	 * @return array
+	 */
+	public function getExtensionConfiguration() {
+		$setup = $this->configurationManager->getConfiguration(
+			Tx_Extbase_Configuration_ConfigurationManager::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
 		);
+		return !empty($setup['plugin.']['tx_lpiframef4x.']) ? $setup['plugin.']['tx_lpiframef4x.'] : array();
 	}
 }
