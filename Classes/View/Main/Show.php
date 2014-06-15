@@ -5,7 +5,7 @@ Namespace LarsPeipmann\LpIframe\View\Main;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2013 Lars Peipmann <Lars@Peipmann.de>
+ *  (c) 2014 Lars Peipmann <Lars@Peipmann.de>
  *
  *  All rights reserved
  *
@@ -34,6 +34,13 @@ Namespace LarsPeipmann\LpIframe\View\Main;
  */
 
 class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
+
+	/**
+	 * @var \LarsPeipmann\LpIframe\Service\ConfigurationManager
+	 * @inject
+	 */
+	protected $configurationManager;
+
 	/**
 	 * Renders the view
 	 *
@@ -43,7 +50,7 @@ class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
 		$attributes = $this->variables['attributes'];
 
 		/** @var $contentObject \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer */
-		$contentObject = &$GLOBALS['TSFE']->cObj;
+		$contentObject = $this->variables['contentObject'];
 
 		if (!empty($this->variables['options']['insertData'])) {
 			foreach ($attributes as $key => $value) {
@@ -60,10 +67,7 @@ class Show extends \TYPO3\CMS\Extbase\Mvc\View\AbstractView {
 
 		$contentObject->start($attributes);
 
-		/** @var $typoScriptObject \TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController */
-		$typoScriptObject = &$GLOBALS['TSFE'];
-		$extensionTypoScript = $typoScriptObject->tmpl->setup['plugin.']['tx_lpiframe.'];
-
+		$extensionTypoScript = $this->configurationManager->getExtensionConfiguration();
 		if (!empty($extensionTypoScript['renderObj']) && !empty($extensionTypoScript['renderObj.'])) {
 			$content = $contentObject->cObjGetSingle($extensionTypoScript['renderObj'], $extensionTypoScript['renderObj.']);
 		} else {

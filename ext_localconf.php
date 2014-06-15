@@ -9,7 +9,6 @@ if (!defined('TYPO3_MODE')) {
 	array(
 		'Main' => 'show',
 	),
-	// non-cacheable actions
 	array(
 	)
 );

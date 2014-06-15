@@ -1,6 +1,6 @@
 <?php
 
-namespace LarsPeipmann\LpIframe\Controller;
+namespace LarsPeipmann\LpIframe\Service;
 
 /***************************************************************
  *  Copyright notice
@@ -27,40 +27,28 @@ namespace LarsPeipmann\LpIframe\Controller;
  ***************************************************************/
 
 /**
- * The main controller for the page backend module.
+ * Configuration Manager
  *
  * @package LpIframe
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-class MainController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+class ConfigurationManager implements \TYPO3\CMS\Core\SingletonInterface {
 
 	/**
-	 * Initializes the controller before invoking an action method.
-	 *
-	 * @return void
+	 * @var \TYPO3\CMS\Extbase\Configuration\ConfigurationManager
+	 * @inject
 	 */
-	protected function initializeAction() {
-		// Replace old pattern with new one (new pattern comes with Extbase 6.2)
-		if (!preg_match('/\\\/', $this->viewObjectNamePattern)) {
-			$this->viewObjectNamePattern = 'LarsPeipmann\@extension\View\@controller\@action@format';
-		}
-	}
+	protected $configurationManager;
 
 	/**
-	 * Show action
-	 *
-	 * Assigns FlexForm data to the view.
-	 *
-	 * @return void
+	 * @return array
+	 * @throws \TYPO3\CMS\Extbase\Configuration\Exception\InvalidConfigurationTypeException
 	 */
-	public function showAction() {
-		$this->view->assignMultiple(
-			array(
-				'attributes' => $this->settings['attributes'],
-				'options' => $this->settings['options'],
-				'contentObject' => $this->configurationManager->getContentObject()
-			)
+	public function getExtensionConfiguration() {
+		$setup = $this->configurationManager->getConfiguration(
+			\TYPO3\CMS\Extbase\Configuration\ConfigurationManager::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
 		);
+		return !empty($setup['plugin.']['tx_lpiframe.']) ? $setup['plugin.']['tx_lpiframe.'] : array();
 	}
 }
