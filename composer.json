@@ -1,6 +1,6 @@
 {
     "name": "typo3-ter/lp-iframe",
-    "type": "cms-extension",
+    "type": "typo3-cms-extension",
     "description": "Yet another iFrame extension with HTML5 support. Rendered with TypoScript.",
     "homepage": "https://github.com/lars85/TYPO3-Extensions-lp_iframe",
     "license": ["GPL-2.0+"],
