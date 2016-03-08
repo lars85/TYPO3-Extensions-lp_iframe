@@ -41,8 +41,8 @@ class MainController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController 
 	 * @return void
 	 */
 	protected function initializeAction() {
-		// Replace old pattern with new one (new pattern comes with Extbase 6.2)
-		if (!preg_match('/\\\/', $this->viewObjectNamePattern)) {
+		// Replace old pattern with new one
+		if (!preg_match('/\\\/', $this->namespacesViewObjectNamePattern)) {
 			$this->viewObjectNamePattern = 'LarsPeipmann\@extension\View\@controller\@action@format';
 		}
 	}
