@@ -1,201 +1,202 @@
 plugin.tx_lpiframe {
-	renderObj = COA
-	renderObj {
-		wrap = <div class="tx-lpiframe-pi1">|</div>
-		10 = COA
-		10 {
-			wrap = <iframe|>
+    renderObj = COA
+    renderObj {
+        wrap = <div class="tx-lpiframe-pi1">|</div>
+        10 = COA
+        10 {
+            wrap = <iframe|>
 
-			# Src
-			10 = TEXT
-			10 {
-				noTrimWrap = | src="|"|
-				value = {$plugin.tx_lpiframe.settings.attributes.src}
-				override.field = src
-				required = 1
-			}
+            # Src
+            10 = TEXT
+            10 {
+                noTrimWrap = | src="|"|
+                value = {$plugin.tx_lpiframe.settings.attributes.src}
+                override.field = src
+                required = 1
+            }
 
-			# Width
-			20 = TEXT
-			20 {
-				noTrimWrap = | width="|"|
-				value = {$plugin.tx_lpiframe.settings.attributes.width}
-				override.field = width
-				required = 1
-				prioriCalc = intval
-			}
+            # Width
+            20 = TEXT
+            20 {
+                noTrimWrap = | width="|"|
+                value = {$plugin.tx_lpiframe.settings.attributes.width}
+                override.field = width
+                required = 1
+                prioriCalc = intval
+            }
 
-			# Height
-			30 = TEXT
-			30 {
-				noTrimWrap = | height="|"|
-				value = {$plugin.tx_lpiframe.settings.attributes.height}
-				override.field = height
-				required = 1
-				prioriCalc = intval
-			}
+            # Height
+            30 = TEXT
+            30 {
+                noTrimWrap = | height="|"|
+                value = {$plugin.tx_lpiframe.settings.attributes.height}
+                override.field = height
+                required = 1
+                prioriCalc = intval
+            }
 
-			# Name
-			40 = TEXT
-			40 {
-				noTrimWrap = | name="|"|
-				value = {$plugin.tx_lpiframe.settings.attributes.name}
-				override.field = name
-				required = 1
-			}
+            # Name
+            40 = TEXT
+            40 {
+                noTrimWrap = | name="|"|
+                value = {$plugin.tx_lpiframe.settings.attributes.name}
+                override.field = name
+                required = 1
+            }
 
-			# Sandbox
-			50 = CASE
-			50 {
-				stdWrap.noTrimWrap = | sandbox="|"|
-				stdWrap.required = 1
+            # Sandbox
+            50 = CASE
+            50 {
+                stdWrap.noTrimWrap = | sandbox="|"|
+                stdWrap.required = 1
 
-				key.field = sandbox
+                key.field = sandbox
 
-				0 = TEXT
-				0.value = {$plugin.tx_lpiframe.settings.attributes.sandbox}
+                0 = TEXT
+                0.value = {$plugin.tx_lpiframe.settings.attributes.sandbox}
 
-				1 = TEXT
-				1.value = allow-forms
+                1 = TEXT
+                1.value = allow-forms
 
-				2 = TEXT
-				2.value = allow-same-origin
+                2 = TEXT
+                2.value = allow-same-origin
 
-				3 = TEXT
-				3.value = allow-scripts
+                3 = TEXT
+                3.value = allow-scripts
 
-				4 = TEXT
-				4.value = allow-top-navigation
-			}
+                4 = TEXT
+                4.value = allow-top-navigation
+            }
 
-			# Seamless
-			60 = CASE
-			60 {
-				key.field = seamless
+            # Seamless
+            60 = CASE
+            60 {
+                key.field = seamless
 
-				1 = TEXT
-				1.value = seamless
-				1.noTrimWrap = | seamless="|"|
+                1 = TEXT
+                1.value = seamless
+                1.noTrimWrap = | seamless="|"|
 
-				0 < .1
-				0.if.isTrue.value = {$plugin.tx_lpiframe.settings.attributes.seamless}
-			}
+                0 < .1
+                0.if.isTrue.value = {$plugin.tx_lpiframe.settings.attributes.seamless}
+            }
 
-			# Srcdoc
-			70 = TEXT
-			70 {
-				noTrimWrap = | srcdoc="|"|
-				value = {$plugin.tx_lpiframe.settings.attributes.srcdoc}
-				override.field = srcdoc
-				required = 1
-			}
+            # Srcdoc
+            70 = TEXT
+            70 {
+                noTrimWrap = | srcdoc="|"|
+                value = {$plugin.tx_lpiframe.settings.attributes.srcdoc}
+                override.field = srcdoc
+                required = 1
+            }
 
-			###
-			# Additional attributes
+            ###
+            # Additional attributes
 
-			100 = TEXT
-			100 {
-				noTrimWrap = | id="|"|
-				value = {$plugin.tx_lpiframe.settings.attributes.id}
-				override.field = id
-				required = 1
-			}
+            100 = TEXT
+            100 {
+                noTrimWrap = | id="|"|
+                value = {$plugin.tx_lpiframe.settings.attributes.id}
+                override.field = id
+                required = 1
+            }
 
-			110 = COA
-			110 {
-				stdWrap.noTrimWrap = | class="|"|
-				stdWrap.required = 1
-				stdWrap.trim = 1
+            110 = COA
+            110 {
+                stdWrap.noTrimWrap = | class="|"|
+                stdWrap.required = 1
+                stdWrap.trim = 1
 
-				10 = TEXT
-				10 {
-					noTrimWrap = || |
-					required = 1
+                10 = TEXT
+                10 {
+                    noTrimWrap = || |
+                    required = 1
 
-					value = {$plugin.tx_lpiframe.settings.attributes.class}
-					override.field = class
+                    value = {$plugin.tx_lpiframe.settings.attributes.class}
+                    override.field = class
 
-					case = lower
-					replacement {
-						10 {
-							search = #[^A-Z|a-z|0-9| ]#
-							replace = -
-							useRegExp = 1
-						}
-					}
-				}
-				20 < .10
-				20 {
-					value = {$plugin.tx_lpiframe.settings.attributes.additionalClass}
-					override >
-				}
-			}
+                    case = lower
+                    replacement {
+                        10 {
+                            search = #[^A-Z|a-z|0-9| ]#
+                            replace = -
+                            useRegExp = 1
+                        }
+                    }
+                }
 
-			120 = TEXT
-			120 {
-				noTrimWrap = | style="|"|
-				value = {$plugin.tx_lpiframe.settings.attributes.style}
-				override.field = style
-				required = 1
-			}
+                20 < .10
+                20 {
+                    value = {$plugin.tx_lpiframe.settings.attributes.additionalClass}
+                    override >
+                }
+            }
 
-			###
-			# Deprecated attributes
+            120 = TEXT
+            120 {
+                noTrimWrap = | style="|"|
+                value = {$plugin.tx_lpiframe.settings.attributes.style}
+                override.field = style
+                required = 1
+            }
 
-			# Scrolling
-			200 = CASE
-			200 {
-				stdWrap.noTrimWrap = | scrolling="|"|
-				stdWrap.required = 1
+            ###
+            # Deprecated attributes
 
-				key.field = scrolling
+            # Scrolling
+            200 = CASE
+            200 {
+                stdWrap.noTrimWrap = | scrolling="|"|
+                stdWrap.required = 1
 
-				0 = TEXT
-				0.value = {$plugin.tx_lpiframe.settings.attributes.scrolling}
+                key.field = scrolling
 
-				1 = TEXT
-				1.value = yes
+                0 = TEXT
+                0.value = {$plugin.tx_lpiframe.settings.attributes.scrolling}
 
-				2 = TEXT
-				2.value = no
+                1 = TEXT
+                1.value = yes
 
-				3 = TEXT
-				3.value = auto
-			}
+                2 = TEXT
+                2.value = no
 
-			# Frameborder
-			210 = COA
-			210 {
-				stdWrap.noTrimWrap = | frameborder="|"|
+                3 = TEXT
+                3.value = auto
+            }
 
-				10 = CASE
-				10 {
-					key.field = frameborder
+            # Frameborder
+            210 = COA
+            210 {
+                stdWrap.noTrimWrap = | frameborder="|"|
 
-					0 = TEXT
-					0.value = {$plugin.tx_lpiframe.settings.attributes.frameborder}
+                10 = CASE
+                10 {
+                    key.field = frameborder
 
-					1 = TEXT
-					1.value = 1
+                    0 = TEXT
+                    0.value = {$plugin.tx_lpiframe.settings.attributes.frameborder}
 
-					2 = TEXT
-					2.value = 0
-				}
+                    1 = TEXT
+                    1.value = 1
 
-				if.value = 0,1,2
-				if.isInList.cObject < .10
-			}
-		}
+                    2 = TEXT
+                    2.value = 0
+                }
 
-		20 = TEXT
-		20.data = LLL:EXT:lp_iframe/Resources/Private/Language/locallang.xlf:not-supported
-		20.wrap = <p class="not-supported">|</p>
+                if.value = 0,1,2
+                if.isInList.cObject < .10
+            }
+        }
 
-		30 = TEXT
-		30.value = </iframe>
+        20 = TEXT
+        20.data = LLL:EXT:lp_iframe/Resources/Private/Language/locallang.xlf:not-supported
+        20.wrap = <p class="not-supported">|</p>
 
-		# Debug
-		#999 = TEXT
-		#999.data = debug:data
-	}
+        30 = TEXT
+        30.value = </iframe>
+
+        # Debug
+        #999 = TEXT
+        #999.data = debug:data
+    }
 }

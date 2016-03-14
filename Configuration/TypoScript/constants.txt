@@ -5,37 +5,37 @@
 # customsubcategory=lpiframeTab40Deprecated=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:tab.deprecated
 
 plugin.tx_lpiframe {
-	settings {
-		attributes {
-			# cat=plugin.tx_lpiframe/lpiframeTab10General/100; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.src
-			src =
-			# cat=plugin.tx_lpiframe/lpiframeTab10General/110; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.width
-			width =
-			# cat=plugin.tx_lpiframe/lpiframeTab10General/120; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.height
-			height =
+    settings {
+        attributes {
+            # cat=plugin.tx_lpiframe/lpiframeTab10General/100; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.src
+            src =
+            # cat=plugin.tx_lpiframe/lpiframeTab10General/110; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.width
+            width =
+            # cat=plugin.tx_lpiframe/lpiframeTab10General/120; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.height
+            height =
 
-			# cat=plugin.tx_lpiframe/lpiframeTab20Html5/200; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.sandbox
-			sandbox =
-			# cat=plugin.tx_lpiframe/lpiframeTab20Html5/210; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.seamless
-			seamless =
-			# cat=plugin.tx_lpiframe/lpiframeTab20Html5/220; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.srcdoc
-			srcdoc =
+            # cat=plugin.tx_lpiframe/lpiframeTab20Html5/200; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.sandbox
+            sandbox =
+            # cat=plugin.tx_lpiframe/lpiframeTab20Html5/210; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.seamless
+            seamless =
+            # cat=plugin.tx_lpiframe/lpiframeTab20Html5/220; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.srcdoc
+            srcdoc =
 
-			# cat=plugin.tx_lpiframe/lpiframeTab30Global/300; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.name
-			name =
-			# cat=plugin.tx_lpiframe/lpiframeTab30Global/310; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.id
-			id =
-			# cat=plugin.tx_lpiframe/lpiframeTab30Global/320; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.class
-			class =
-			# cat=plugin.tx_lpiframe/lpiframeTab30Global/330; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.additionalClass
-			additionalClass =
-			# cat=plugin.tx_lpiframe/lpiframeTab30Global/340; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.style
-			style =
+            # cat=plugin.tx_lpiframe/lpiframeTab30Global/300; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.name
+            name =
+            # cat=plugin.tx_lpiframe/lpiframeTab30Global/310; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.id
+            id =
+            # cat=plugin.tx_lpiframe/lpiframeTab30Global/320; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.class
+            class =
+            # cat=plugin.tx_lpiframe/lpiframeTab30Global/330; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.additionalClass
+            additionalClass =
+            # cat=plugin.tx_lpiframe/lpiframeTab30Global/340; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.style
+            style =
 
-			# cat=plugin.tx_lpiframe/lpiframeTab40Deprecated/400; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.scrolling
-			scrolling =
-			# cat=plugin.tx_lpiframe/lpiframeTab40Deprecated/410; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.frameborder
-			frameborder =
-		}
-	}
+            # cat=plugin.tx_lpiframe/lpiframeTab40Deprecated/400; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.scrolling
+            scrolling =
+            # cat=plugin.tx_lpiframe/lpiframeTab40Deprecated/410; type=string; label=LLL:EXT:lp_iframe/Resources/Private/Language/locallang_constants.xlf:settings.attributes.frameborder
+            frameborder =
+        }
+    }
 }

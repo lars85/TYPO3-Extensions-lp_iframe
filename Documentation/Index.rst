@@ -20,10 +20,10 @@ lp_iframe: iFrame for HTML5 Websites
       forEditors, forAdmins, forBeginners, forIntermediates
 
 :Author:
-      Lars Peipmann
+      Lars Malach
 
 :Email:
-      Lars@Peipmann.de
+      Lars@Malach.de
 
 :Language:
       en
