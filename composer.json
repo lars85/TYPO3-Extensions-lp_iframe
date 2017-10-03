@@ -24,7 +24,7 @@
     }
   },
   "replace": {
-    "news": "self.version",
+    "lp-iframe": "self.version",
     "typo3-ter/lp-iframe": "self.version"
   }
 }
