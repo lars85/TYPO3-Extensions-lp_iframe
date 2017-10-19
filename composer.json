@@ -17,5 +17,14 @@
       "email": "Lars@Malach.de",
       "role": "Developer"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "LarsPeipmann\\LpIframe\\": "Classes"
+    }
+  },
+  "replace": {
+    "lp_iframe": "self.version",
+    "typo3-ter/lp-iframe": "self.version"
+  }
 }
